@@ -56,4 +56,4 @@ var download = function(url, dest) {
     });
 };
 
-client.login('NjczMDQzMjg0MTM4MTMxNDY2.XjUUUw.i-TnE3UBS0g2md1xJK61toSQVVU');
+client.login(process.env.BOT_TOKEN);
