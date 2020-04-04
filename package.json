@@ -13,7 +13,8 @@
   "dependencies": {
     "bluebird": "^3.7.2",
     "discord.js": "^11.5.1",
-    "node-tesseract-ocr": "^1.0.0"
+    "node-tesseract-ocr": "^1.0.0",
+    "moment": "latest"
   },
   "devDependencies": {
     "@types/node": "^13.7.0"

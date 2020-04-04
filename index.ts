@@ -3,6 +3,7 @@ const client = new Discord.Client();
 import {Collection, Message, MessageAttachment} from "discord.js";
 const tesseract = require("node-tesseract-ocr");
 import * as Bluebird from "bluebird";
+import {Calculator} from "./lib/calculator.controller";
 
 const config = {
     lang: "eng",
@@ -34,6 +35,22 @@ client.on('message', async (msg: Message) => {
                 }
             }
         });
+    }
+    if (msg.content && msg.content.split(' ')[0] === 'war') {
+        let calculator = new Calculator();
+        calculator.tier = parseInt(msg.content.split(' ')[1]);
+        if ([1,2,3].indexOf(calculator.tier) > -1) {
+            calculator.changeTier();
+            let targetScore = parseInt(msg.content.split(' ')[2]);
+            if (isFinite(targetScore)) {
+                let cases = calculator.getAdviceByScore(targetScore);
+                cases.filter(c => c.show).map(strategy => calculator.getInstructions(calculator.getInstructionsFromStrategy(strategy, targetScore), strategy.repetitions)).forEach(message => msg.reply(message));
+            } else {
+                msg.reply('Type `war <tier> <score>`\nExample: `war 1 6400`');
+            }
+        } else {
+            msg.reply('Type `war <tier> <score>`\nExample: `war 1 6400`');
+        }
     }
 });
 
