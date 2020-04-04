@@ -1,0 +1,1 @@
+# suikoden-elchronicle-discord-bot
