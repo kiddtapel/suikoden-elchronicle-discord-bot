@@ -36,7 +36,7 @@ client.on('message', async (msg: Message) => {
             }
         });
     }
-    if (msg.content && msg.content.split(' ')[0] === 'war') {
+    if (msg.content && msg.content.toLowerCase().split(' ')[0] === 'war') {
         let calculator = new Calculator();
         calculator.tier = parseInt(msg.content.split(' ')[1]);
         if ([1,2,3].indexOf(calculator.tier) > -1) {
