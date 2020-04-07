@@ -346,7 +346,7 @@ export function Calculator () {
                 minScore = (c.killsInUncleared) * killScore;
                 maxScore = Math.min((c.killsInUncleared+1) * killScore-1, killScore * 3);
             }
-            var t = (targetScore-1) / c.repetitions;
+            var t = (targetScore-2) / c.repetitions;
             // console.log(c.title, c.repetitions, "repetitions", t, minScore, maxScore, t > minScore && t <= maxScore);
             c.show = t > minScore && t <= maxScore;
             if (c.show) calculator.foundAdvice = true;
@@ -359,7 +359,7 @@ export function Calculator () {
     };
 
     calculator.getInstructionsFromStrategy = function(strategy, targetScore) {
-        let score = Math.floor((targetScore-1) / strategy.repetitions);
+        let score = Math.floor((targetScore-2) / strategy.repetitions);
         if (strategy.killsInUncleared) {
             score -= strategy.killsInUncleared * killScore;
         }
