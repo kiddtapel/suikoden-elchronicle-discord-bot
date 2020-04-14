@@ -46,10 +46,10 @@ client.on('message', async (msg: Message) => {
                 let cases = calculator.getAdviceByScore(targetScore);
                 cases.filter(c => c.show).map(strategy => calculator.getInstructions(calculator.getInstructionsFromStrategy(strategy, targetScore), strategy.repetitions)).forEach(message => msg.reply(message));
             } else {
-                msg.reply('Type `war <tier> <score>`\nExample: `war 1 6400`');
+                msg.reply('I don\'t understand');
             }
         } else {
-            msg.reply('Type `war <tier> <score>`\nExample: `war 1 6400`');
+            msg.reply('I don\'t understand');
         }
     }
 });
