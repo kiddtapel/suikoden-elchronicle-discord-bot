@@ -21,7 +21,6 @@ client.on('ready', () => {
 
 client.on('message', async (msg: Message) => {
     if (`${msg.author.username}#${msg.author.discriminator}` === 'Suikoden-Guild-Bot#5382') return;
-    console.log(`message from ${msg.author.username}#${msg.author.discriminator}: ${msg.content}`);
     if (whitelisted.indexOf(`${msg.author.username}#${msg.author.discriminator}`) === -1) {
         console.error(`${msg.author.username}#${msg.author.discriminator} is not whitelisted`);
         msg.reply('Sorry! You are not authorized.');
@@ -30,23 +29,23 @@ client.on('message', async (msg: Message) => {
     if (msg.content === 'ping') {
         msg.reply('Pong!');
     }
-    if (msg.attachments) {
-        await Bluebird.each(msg.attachments.array(), async (value: MessageAttachment) => {
-
-            if (value.width && value.height) {
-                try {
-                    await download(value.url, value.filename);
-                    let text = await tesseract.recognize(value.filename, config);
-                    console.log(value.filename);
-                    console.log(text);
-                } catch(error) {
-                    console.error(error);
-                } finally {
-                    fs.unlinkSync(value.filename);
-                }
-            }
-        });
-    }
+    // if (msg.attachments) {
+    //     await Bluebird.each(msg.attachments.array(), async (value: MessageAttachment) => {
+    //
+    //         if (value.width && value.height) {
+    //             try {
+    //                 await download(value.url, value.filename);
+    //                 let text = await tesseract.recognize(value.filename, config);
+    //                 console.log(value.filename);
+    //                 console.log(text);
+    //             } catch(error) {
+    //                 console.error(error);
+    //             } finally {
+    //                 fs.unlinkSync(value.filename);
+    //             }
+    //         }
+    //     });
+    // }
     if (msg.content && msg.content.toLowerCase().split(' ')[0] === 'war') {
         let calculator = new Calculator();
         calculator.tier = parseInt(msg.content.split(' ')[1]);
