@@ -32,6 +32,9 @@ client.on('message', async (msg: Message) => {
     if (msg.content.toLowerCase().indexOf('pogi') > -1) {
         msg.reply('ako ang pogi!');
     }
+    if (msg.content.toLowerCase().indexOf('pangit') > -1) {
+        msg.reply('ikaw ang pangit!');
+    }
     // if (msg.attachments) {
     //     await Bluebird.each(msg.attachments.array(), async (value: MessageAttachment) => {
     //
