@@ -47,6 +47,7 @@ client.on('message', async (msg: Message) => {
     //     });
     // }
     if (msg.content && msg.content.toLowerCase().split(' ')[0] === 'war') {
+        console.log(`message from ${msg.author.username}#${msg.author.discriminator}: ${msg.content}`);
         let calculator = new Calculator();
         calculator.tier = parseInt(msg.content.split(' ')[1]);
         if ([1,2,3].indexOf(calculator.tier) > -1) {
