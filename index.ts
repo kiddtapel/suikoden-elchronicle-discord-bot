@@ -1,3 +1,5 @@
+import {white} from "color-name";
+
 const Discord = require('discord.js');
 const client = new Discord.Client();
 import {Collection, Message, MessageAttachment} from "discord.js";
@@ -11,11 +13,20 @@ const config = {
     psm: 3,
 };
 
+let whitelisted = ['MonkeyWrench#8202'];
+
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
 });
 
 client.on('message', async (msg: Message) => {
+    if (`${msg.author.username}#${msg.author.discriminator}` === 'Suikoden-Guild-Bot#5382') return;
+    console.log(`message from ${msg.author.username}#${msg.author.discriminator}: ${msg.content}`);
+    if (whitelisted.indexOf(`${msg.author.username}#${msg.author.discriminator}`) === -1) {
+        console.error(`${msg.author.username}#${msg.author.discriminator} is not whitelisted`);
+        msg.reply('Sorry! You are not authorized.');
+        return;
+    }
     if (msg.content === 'ping') {
         msg.reply('Pong!');
     }

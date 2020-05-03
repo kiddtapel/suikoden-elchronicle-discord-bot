@@ -17,6 +17,7 @@
     "moment": "latest"
   },
   "devDependencies": {
-    "@types/node": "^13.7.0"
+    "@types/node": "^13.7.0",
+    "jest": "^25.5.4"
   }
 }
