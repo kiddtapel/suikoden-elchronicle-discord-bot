@@ -23,7 +23,7 @@ client.on('message', async (msg: Message) => {
     if (`${msg.author.username}#${msg.author.discriminator}` === 'Suikoden-Guild-Bot#5382') return;
     if (whitelisted.indexOf(`${msg.author.username}#${msg.author.discriminator}`) === -1) {
         console.error(`${msg.author.username}#${msg.author.discriminator} is not whitelisted`);
-        msg.reply('Sorry! You are not authorized.');
+        // msg.reply('Sorry! You are not authorized.');
         return;
     }
     if (msg.content === 'ping') {
