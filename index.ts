@@ -26,8 +26,11 @@ client.on('message', async (msg: Message) => {
         // msg.reply('Sorry! You are not authorized.');
         return;
     }
-    if (msg.content === 'ping') {
+    if (msg.content.toLowerCase() === 'ping') {
         msg.reply('Pong!');
+    }
+    if (msg.content.toLowerCase().indexOf('pogi') > -1) {
+        msg.reply('ako ang pogi!');
     }
     // if (msg.attachments) {
     //     await Bluebird.each(msg.attachments.array(), async (value: MessageAttachment) => {
