@@ -50,17 +50,13 @@ client.on('message', async (msg: Message) => {
         console.log(`message from ${msg.author.username}#${msg.author.discriminator}: ${msg.content}`);
         let calculator = new Calculator();
         calculator.tier = parseInt(msg.content.split(' ')[1]);
-        if ([1,2,3].indexOf(calculator.tier) > -1) {
+        if ([1, 2, 3].indexOf(calculator.tier) > -1) {
             calculator.changeTier();
             let targetScore = parseInt(msg.content.split(' ')[2]);
             if (isFinite(targetScore)) {
                 let cases = calculator.getAdviceByScore(targetScore);
                 cases.filter(c => c.show).map(strategy => calculator.getInstructions(calculator.getInstructionsFromStrategy(strategy, targetScore), strategy.repetitions)).forEach(message => msg.reply(message));
-            } else {
-                msg.reply('I don\'t understand');
             }
-        } else {
-            msg.reply('I don\'t understand');
         }
     }
 });
