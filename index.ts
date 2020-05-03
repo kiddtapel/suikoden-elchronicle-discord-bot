@@ -13,7 +13,7 @@ const config = {
     psm: 3,
 };
 
-let whitelisted = ['MonkeyWrench#8202'];
+let whitelisted = ['MonkeyWrench#8202', 'Evil#5506'];
 
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
