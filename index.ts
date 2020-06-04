@@ -59,9 +59,12 @@ client.on('message', async (msg: Message) => {
         if ([1, 2, 3].indexOf(calculator.tier) > -1) {
             calculator.changeTier();
             let targetScore = parseInt(msg.content.split(' ')[2]);
+            let a1TimeLeft = msg.content.split(' ')[3];
+            let a2TimeLeft = msg.content.split(' ')[4];
+            let a3TimeLeft = msg.content.split(' ')[5];
             if (isFinite(targetScore)) {
                 let cases = calculator.getAdviceByScore(targetScore);
-                cases.filter(c => c.show).map(strategy => calculator.getInstructions(calculator.getInstructionsFromStrategy(strategy, targetScore), strategy.repetitions)).forEach(message => msg.reply(message));
+                cases.filter(c => c.show).map(strategy => calculator.getInstructions(calculator.getInstructionsFromStrategy(strategy, targetScore, a1TimeLeft, a2TimeLeft, a3TimeLeft), strategy.repetitions)).forEach(message => msg.reply(message));
             }
         }
     }

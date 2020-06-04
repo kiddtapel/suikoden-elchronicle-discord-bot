@@ -358,7 +358,7 @@ export function Calculator () {
         return (killScore * 3 + (scorePerSecond * (timeLeft + 0.5))) * numberOfAreasCleared + ((killsInAreaUncleared || 0) * killScore);
     };
 
-    calculator.getInstructionsFromStrategy = function(strategy, targetScore) {
+    calculator.getInstructionsFromStrategy = function(strategy, targetScore, a1TimeLeft, a2TimeLeft, a3TimeLeft) {
         let score = Math.floor((targetScore-scorePerSecond) / strategy.repetitions);
         if (strategy.killsInUncleared) {
             score -= strategy.killsInUncleared * killScore;
