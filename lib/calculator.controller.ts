@@ -1,5 +1,6 @@
 import moment from 'moment';
-export function Calculator () {
+
+export function Calculator() {
     var calculator: any;
     // @ts-ignore
     calculator = this;
@@ -36,7 +37,7 @@ export function Calculator () {
         killsInUncleared: 0,
         repetitions: 1,
         show: false
-    },{
+    }, {
         title: "Power Overwhelming",
         type: 'Class A Monster',
         min: powerOverwhelming,
@@ -45,7 +46,7 @@ export function Calculator () {
         killsInUncleared: 0,
         repetitions: 1,
         show: false
-    },{
+    }, {
         title: "Full Clear",
         type: "Fast",
         min: fastTime,
@@ -54,7 +55,7 @@ export function Calculator () {
         killsInUncleared: 0,
         repetitions: 1,
         show: false
-    },{
+    }, {
         title: "Full Clear",
         type: "Average",
         min: averageTime,
@@ -63,7 +64,7 @@ export function Calculator () {
         killsInUncleared: 0,
         repetitions: 1,
         show: false
-    },{
+    }, {
         title: "Full Clear",
         type: "Dragged",
         min: foreverTime,
@@ -72,7 +73,7 @@ export function Calculator () {
         killsInUncleared: 0,
         repetitions: 1,
         show: false
-    },{
+    }, {
         title: "Full Clear",
         type: "Forever",
         min: minTimeLeft,
@@ -81,7 +82,7 @@ export function Calculator () {
         killsInUncleared: 0,
         repetitions: 1,
         show: false
-    },{
+    }, {
         title: "2 Clears and 2 Kills",
         type: "Fast",
         min: powerOverwhelming,
@@ -90,7 +91,7 @@ export function Calculator () {
         killsInUncleared: 2,
         repetitions: 1,
         show: false
-    },{
+    }, {
         title: "2 Clears and 2 Kills",
         type: "Average",
         min: averageTime,
@@ -99,7 +100,7 @@ export function Calculator () {
         killsInUncleared: 2,
         repetitions: 1,
         show: false
-    },{
+    }, {
         title: "2 Clears and 2 Kills",
         type: "Dragged",
         min: foreverTime,
@@ -108,7 +109,7 @@ export function Calculator () {
         killsInUncleared: 2,
         repetitions: 1,
         show: false
-    },{
+    }, {
         title: "2 Clears and 2 Kills",
         type: "Forever",
         min: minTimeLeft,
@@ -117,7 +118,7 @@ export function Calculator () {
         killsInUncleared: 2,
         repetitions: 1,
         show: false
-    },{
+    }, {
         title: "2 Clears and 1 Kill",
         type: "Fast",
         min: powerOverwhelming,
@@ -126,7 +127,7 @@ export function Calculator () {
         killsInUncleared: 1,
         repetitions: 1,
         show: false
-    },{
+    }, {
         title: "2 Clears and 1 Kills",
         type: "Average",
         min: averageTime,
@@ -135,7 +136,7 @@ export function Calculator () {
         killsInUncleared: 1,
         repetitions: 1,
         show: false
-    },{
+    }, {
         title: "2 Clears and 1 Kill",
         type: "Dragged",
         min: foreverTime,
@@ -144,7 +145,7 @@ export function Calculator () {
         killsInUncleared: 1,
         repetitions: 1,
         show: false
-    },{
+    }, {
         title: "2 Clears and 1 Kill",
         type: "Forever",
         min: minTimeLeft,
@@ -153,7 +154,7 @@ export function Calculator () {
         killsInUncleared: 1,
         repetitions: 1,
         show: false
-    },{
+    }, {
         title: "2 Clears",
         type: "Fast",
         min: powerOverwhelming,
@@ -162,7 +163,7 @@ export function Calculator () {
         killsInUncleared: 0,
         repetitions: 1,
         show: false
-    },{
+    }, {
         title: "2 Clears",
         type: "Average",
         min: averageTime,
@@ -171,7 +172,7 @@ export function Calculator () {
         killsInUncleared: 0,
         repetitions: 1,
         show: false
-    },{
+    }, {
         title: "2 Clears",
         type: "Dragged",
         min: foreverTime,
@@ -180,7 +181,7 @@ export function Calculator () {
         killsInUncleared: 0,
         repetitions: 1,
         show: false
-    },{
+    }, {
         title: "2 Clears",
         type: "Forever",
         min: minTimeLeft,
@@ -189,7 +190,7 @@ export function Calculator () {
         killsInUncleared: 0,
         repetitions: 1,
         show: false
-    },{
+    }, {
         title: "1 Clear and 2 Kills",
         type: "Fast",
         min: powerOverwhelming,
@@ -198,7 +199,7 @@ export function Calculator () {
         killsInUncleared: 2,
         repetitions: 1,
         show: false
-    },{
+    }, {
         title: "1 Clear and 2 Kills",
         type: "Average",
         min: averageTime,
@@ -207,7 +208,7 @@ export function Calculator () {
         killsInUncleared: 2,
         repetitions: 1,
         show: false
-    },{
+    }, {
         title: "1 Clear and 2 Kills",
         type: "Dragged",
         min: foreverTime,
@@ -216,7 +217,7 @@ export function Calculator () {
         killsInUncleared: 2,
         repetitions: 1,
         show: false
-    },{
+    }, {
         title: "1 Clear and 2 Kills",
         type: "Forever",
         min: minTimeLeft,
@@ -225,7 +226,7 @@ export function Calculator () {
         killsInUncleared: 2,
         repetitions: 1,
         show: false
-    },{
+    }, {
         title: "1 Clear and 1 Kill",
         type: "Fast",
         min: powerOverwhelming,
@@ -234,7 +235,7 @@ export function Calculator () {
         killsInUncleared: 1,
         repetitions: 1,
         show: false
-    },{
+    }, {
         title: "1 Clear and 1 Kills",
         type: "Average",
         min: averageTime,
@@ -243,7 +244,7 @@ export function Calculator () {
         killsInUncleared: 1,
         repetitions: 1,
         show: false
-    },{
+    }, {
         title: "1 Clear and 1 Kill",
         type: "Dragged",
         min: foreverTime,
@@ -252,7 +253,7 @@ export function Calculator () {
         killsInUncleared: 1,
         repetitions: 1,
         show: false
-    },{
+    }, {
         title: "1 Clear and 1 Kill",
         type: "Forever",
         min: minTimeLeft,
@@ -261,7 +262,7 @@ export function Calculator () {
         killsInUncleared: 1,
         repetitions: 1,
         show: false
-    },{
+    }, {
         title: "1 Clear",
         type: "Fast",
         min: powerOverwhelming,
@@ -270,7 +271,7 @@ export function Calculator () {
         killsInUncleared: 0,
         repetitions: 1,
         show: false
-    },{
+    }, {
         title: "1 Clear",
         type: "Average",
         min: averageTime,
@@ -279,7 +280,7 @@ export function Calculator () {
         killsInUncleared: 0,
         repetitions: 1,
         show: false
-    },{
+    }, {
         title: "1 Clear",
         type: "Dragged",
         min: foreverTime,
@@ -288,7 +289,7 @@ export function Calculator () {
         killsInUncleared: 0,
         repetitions: 1,
         show: false
-    },{
+    }, {
         title: "1 Clear",
         type: "Forever",
         min: minTimeLeft,
@@ -315,9 +316,9 @@ export function Calculator () {
         show: false
     }];
 
-    calculator.getCalculatorHref = function(instructions) {
+    calculator.getCalculatorHref = function (instructions) {
         var string = "calculator.html?tier=" + calculator.tier + "&";
-        for(var i = 0; i < 3; i++) {
+        for (var i = 0; i < 3; i++) {
             if (instructions[i]) {
                 string += "clearTime." + i + "=" + (instructions[i].clearTime || "0") + "&";
                 string += "kills." + i + "=" + (instructions[i].kills || "0") + "&";
@@ -327,26 +328,26 @@ export function Calculator () {
         return string;
     };
 
-    calculator.getAdviceByScoreMax = function() {
-        return maxAreaScore*9;
+    calculator.getAdviceByScoreMax = function () {
+        return maxAreaScore * 9;
     };
 
-    calculator.getKillScore = function() {
+    calculator.getKillScore = function () {
         return killScore;
     };
 
-    calculator.getAdviceByScore = function(targetScore){
+    calculator.getAdviceByScore = function (targetScore) {
         calculator.recommendations = [];
         calculator.foundAdvice = false;
 
-        cases.forEach(function(c){
+        cases.forEach(function (c) {
             var minScore = calculator.getBoundary(c.clearedAreas, c.min, c.killsInUncleared);
             var maxScore = calculator.getBoundary(c.clearedAreas, c.max, c.killsInUncleared);
             if (c.clearedAreas === 0) {
                 minScore = (c.killsInUncleared) * killScore;
-                maxScore = Math.min((c.killsInUncleared+1) * killScore-1, killScore * 3);
+                maxScore = Math.min((c.killsInUncleared + 1) * killScore - 1, killScore * 3);
             }
-            var t = (targetScore-scorePerSecond) / c.repetitions;
+            var t = (targetScore - scorePerSecond) / c.repetitions;
             // console.log(c.title, c.repetitions, "repetitions", t, minScore, maxScore, t > minScore && t <= maxScore);
             c.show = t > minScore && t <= maxScore;
             if (c.show) calculator.foundAdvice = true;
@@ -354,12 +355,13 @@ export function Calculator () {
         return cases;
     };
 
-    calculator.getBoundary = function(numberOfAreasCleared, timeLeft, killsInAreaUncleared) {
+    calculator.getBoundary = function (numberOfAreasCleared, timeLeft, killsInAreaUncleared) {
         return (killScore * 3 + (scorePerSecond * (timeLeft + 0.5))) * numberOfAreasCleared + ((killsInAreaUncleared || 0) * killScore);
     };
 
-    calculator.getInstructionsFromStrategy = function(strategy, targetScore, a1TimeLeft, a2TimeLeft, a3TimeLeft) {
-        let score = Math.floor((targetScore-scorePerSecond) / strategy.repetitions);
+    calculator.getInstructionsFromStrategy = function (strategy, targetScore, a1TimeLeft, a2TimeLeft, a3TimeLeft) {
+        let score = Math.floor((targetScore - scorePerSecond) / strategy.repetitions);
+        let targetScorePerAttempt = score;
         if (strategy.killsInUncleared) {
             score -= strategy.killsInUncleared * killScore;
         }
@@ -373,13 +375,13 @@ export function Calculator () {
         var totalOffsetSeconds = Math.floor((score * strategy.clearedAreas - area.score * strategy.clearedAreas) / scorePerSecond);
         if (Math.round(area.score * strategy.clearedAreas) === Math.round(score * strategy.clearedAreas))
             totalOffsetSeconds = -1;
-        for(var i = 0; i < strategy.clearedAreas; i++) {
+        for (var i = 0; i < strategy.clearedAreas; i++) {
             var areaOffset = {
                 time: 0,
                 score: 0
             };
             if (totalOffsetSeconds && area.clearTime > 0) {
-                let multiplier = totalOffsetSeconds/Math.abs(totalOffsetSeconds);
+                let multiplier = totalOffsetSeconds / Math.abs(totalOffsetSeconds);
                 areaOffset.time = multiplier;
                 areaOffset.score = scorePerSecond * multiplier;
                 totalOffsetSeconds -= multiplier;
@@ -395,37 +397,64 @@ export function Calculator () {
             areas.push({
                 clearTime: 0,
                 kills: strategy.killsInUncleared,
-                score: strategy.killsInUncleared*killScore
+                score: strategy.killsInUncleared * killScore
             })
         }
         var length = areas.length;
-        for(var j = 0; j < 3-length; j++) {
+        for (var j = 0; j < 3 - length; j++) {
             areas.push({
                 clearTime: 0,
                 kills: 0,
                 score: 0
             });
         }
+        let unmodifiedScore = (areas.reduce(function (total, e) {
+            return total + e.score;
+        }, 0) * strategy.repetitions);
+        let a1NewClearTime = a1TimeLeft && calculator.getClearTime(a1TimeLeft);
+        let a2NewClearTime = a2TimeLeft && calculator.getClearTime(a2TimeLeft);
+        let a3NewClearTime = a3TimeLeft && calculator.getClearTime(a3TimeLeft);
+        if (a1TimeLeft && areas[0]) areas = calculator.adjustRelatively(areas, 0, a1NewClearTime);
+        if (a2TimeLeft && areas[1]) areas = calculator.adjustRelatively(areas, 1, a2NewClearTime);
+        if (a3TimeLeft && areas[2]) areas = calculator.adjustRelatively(areas, 2, a3NewClearTime);
+        let modifiedScore = (areas.reduce(function (total, e) {
+            return total + e.score;
+        }, 0) * strategy.repetitions);
+
+        console.log('modifiedScore', modifiedScore, 'targetScore - scorePerSecond', targetScore - scorePerSecond);
+        if (modifiedScore > targetScore - scorePerSecond) return;
+
         return areas;
     };
 
-    calculator.getStrategyEfficiencyScoreTooltip = function(strategy, targetScore) {
+    calculator.getClearTime = function (timeLeft) {
+        let parts = timeLeft.split(':');
+        let minutes = parseInt(parts[0]);
+        let seconds = parseInt(parts[1]);
+        return maxTimeLeft - (minutes * 60 + seconds);
+    };
+
+    calculator.getStrategyEfficiencyScoreTooltip = function (strategy, targetScore) {
         var areas = calculator.getInstructionsFromStrategy(strategy, targetScore);
-        var total = areas.reduce(function(total, e){ return total + e.score; }, 0);
+        var total = areas.reduce(function (total, e) {
+            return total + e.score;
+        }, 0);
         return (total * strategy.repetitions) + " out of " + targetScore;
     };
 
-    calculator.getStrategyEfficiencyScore = function(strategy, targetScore) {
+    calculator.getStrategyEfficiencyScore = function (strategy, targetScore) {
         var areas = calculator.getInstructionsFromStrategy(strategy, targetScore);
-        var total = areas.reduce(function(total, e){ return total + e.score; }, 0);
+        var total = areas.reduce(function (total, e) {
+            return total + e.score;
+        }, 0);
         return Math.round((total * strategy.repetitions) / targetScore * 100);
     };
 
     calculator.tier = "1";
     var maxAreaScore = 3600, scorePerSecond = 10.5, killScore = 780;
-    calculator.recompute = function (index, field) {
+    calculator.recompute = function (index, areas) {
         // console.log('recompute', 'index =', index, 'field =', field);
-        var kills = calculator.areas[index].kills, clearTime = calculator.areas[index].clearTime;
+        var kills = areas[index].kills, clearTime = areas[index].clearTime;
         var score = 0;
         if (kills === 0 && index === 0) {
             score = 50;
@@ -437,35 +466,38 @@ export function Calculator () {
             score = killScore * 2;
         } else score = Math.round(maxAreaScore - (Math.max(0, clearTime - 0.5) * scorePerSecond));
 
-        calculator.areas[index].score = score;
+        areas[index].score = score;
+        return areas;
     };
 
-    calculator.adjustRelatively = function (index, field, oldValue) {
-        // console.log('adjustRelatively', 'index =', index, 'field =', field, 'oldValue =', oldValue);
-        oldValue = parseInt(oldValue);
-        var change = calculator.areas[index].clearTime - oldValue;
+    calculator.adjustRelatively = function (areas, index, newValue) {
+        console.log('adjustRelatively', 'index =', index, 'newValue =', newValue);
+        let oldValue = parseInt(areas[index].clearTime);
+        var change = newValue - areas[index].clearTime;
+        areas[index].clearTime = newValue;
         var relativeChanges: any = [];
-        if (calculator.areas[index].kills !== 3) return;
+        if (areas[index].kills !== 3) return areas;
         for (var i = index; i < 3; i++) {
             if (index !== i) {
-                if (calculator.areas[i].kills === 3) {
+                if (areas[i].kills === 3) {
                     relativeChanges.push(i);
                 } else break;
             }
         }
-        relativeChanges.forEach(function(c, i) {
-            var halfChange = relativeChanges.length > 1 && i === 0 ? Math[oldValue % 2 === 0? 'ceil' : 'floor'](change/2) : change;
-            if (calculator.areas[c].clearTime - halfChange >= 0 && calculator.areas[c].clearTime - halfChange <= 120) {
+        relativeChanges.forEach(function (c, i) {
+            var halfChange = relativeChanges.length > 1 && i === 0 ? Math[oldValue % 2 === 0 ? 'ceil' : 'floor'](change / 2) : change;
+            if (areas[c].clearTime - halfChange >= 0 && areas[c].clearTime - halfChange <= 120) {
                 // console.log('setting', c, -halfChange);
-                calculator.areas[c].clearTime -= halfChange;
+                areas[c].clearTime -= halfChange;
                 change -= halfChange;
             } else {
                 // console.log('skipped', c, 'calculator.areas[c].clearTime - halfChange =', calculator.areas[c].clearTime - halfChange);
             }
         });
-        calculator.recompute(0, 'Range');
-        calculator.recompute(1, 'Range');
-        calculator.recompute(2, 'Range');
+        areas = calculator.recompute(0, areas);
+        areas = calculator.recompute(1, areas);
+        areas = calculator.recompute(2, areas);
+        return areas;
     };
 
     calculator.remainingTime = function (clearTime) {
@@ -487,9 +519,6 @@ export function Calculator () {
             killScore = 65;
             maxAreaScore = 300;
         }
-        calculator.recompute(0, 'tier');
-        calculator.recompute(1, 'tier');
-        calculator.recompute(2, 'tier');
     };
 
     calculator.recomputeByScore = function (index, onBlur) {
@@ -550,7 +579,7 @@ export function Calculator () {
         return total;
     };
 
-    calculator.getInstructionsToString = function(areas) {
+    calculator.getInstructionsToString = function (areas) {
         var str = "";
         var ended = false;
         areas.forEach(function (area, i) {
@@ -566,22 +595,30 @@ export function Calculator () {
             }
         });
 
-        str += `Score: ${ areas.reduce(function(total, e){ return total + e.score; }, 0) }. `;
+        str += `Score: ${areas.reduce(function (total, e) {
+            return total + e.score;
+        }, 0)}. `;
 
         return str;
     };
 
-    calculator.getInstructions = function(strategy, repetitions) {
+    calculator.getInstructions = function (targetScore, strategy, repetitions) {
 
         var areas = calculator.areas;
+        if (!strategy) return;
         if (strategy) {
             areas = strategy;
         }
-        var str = strategy.title + ':\n' + calculator.getInstructionsToString(areas);
+        console.log('strategy', strategy);
+        let totalScore = areas.reduce(function (total, e) {
+            return total + e.score;
+        }, 0) * repetitions;
+        var str = `${strategy.title} (${(totalScore/targetScore * 100).toFixed(2)}%):
+${calculator.getInstructionsToString(areas)}`;
 
         // console.log(repetitions);
         if (parseInt(repetitions) > 1) {
-            str += repetitions + " times. Total Score: " + (areas.reduce(function(total, e){ return total + e.score; }, 0) * repetitions);
+            str += repetitions + " times. Total Score: " + totalScore;
         }
 
         // console.log(str);
@@ -590,7 +627,7 @@ export function Calculator () {
 
 
     for (var reps = 2; reps <= 3; reps++)
-        cases.forEach(function(c) {
+        cases.forEach(function (c) {
             if (c.repetitions === 1) {
                 let clone = JSON.parse(JSON.stringify(c));
                 clone.repetitions = reps;
