@@ -408,9 +408,6 @@ export function Calculator() {
                 score: 0
             });
         }
-        let unmodifiedScore = (areas.reduce(function (total, e) {
-            return total + e.score;
-        }, 0) * strategy.repetitions);
         let a1NewClearTime = a1TimeLeft && calculator.getClearTime(a1TimeLeft);
         let a2NewClearTime = a2TimeLeft && calculator.getClearTime(a2TimeLeft);
         let a3NewClearTime = a3TimeLeft && calculator.getClearTime(a3TimeLeft);
@@ -421,7 +418,6 @@ export function Calculator() {
             return total + e.score;
         }, 0) * strategy.repetitions);
 
-        console.log('modifiedScore', modifiedScore, 'targetScore - scorePerSecond', targetScore - scorePerSecond);
         if (modifiedScore > targetScore - scorePerSecond) return;
 
         return areas;
@@ -471,7 +467,6 @@ export function Calculator() {
     };
 
     calculator.adjustRelatively = function (areas, index, newValue) {
-        console.log('adjustRelatively', 'index =', index, 'newValue =', newValue);
         let oldValue = parseInt(areas[index].clearTime);
         var change = newValue - areas[index].clearTime;
         areas[index].clearTime = newValue;
