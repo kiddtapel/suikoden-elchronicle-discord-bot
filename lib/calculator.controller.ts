@@ -604,7 +604,6 @@ export function Calculator() {
         if (strategy) {
             areas = strategy;
         }
-        console.log('strategy', strategy);
         let totalScore = areas.reduce(function (total, e) {
             return total + e.score;
         }, 0) * repetitions;
