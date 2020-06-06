@@ -3,7 +3,7 @@ import {Calculator} from "./calculator.controller";
 
 export class Bot {
 
-    whitelisted = ['MonkeyWrench#8202', 'Evil#5506', 'Frank/AstroPH#5231', 'Chuckiel/Licht#5402', 'Esdeath#2053'];
+    whitelisted = ['MonkeyWrench#8202', 'Evil#5506', 'Frank/AstroPH#5231', 'Chuckiel/Licht#5402', 'Esdeath#2053', 'Donavern#6541', 'sushi#3808', 'Kaiiiiiiii#3401', 'itan#4280'];
 
     public process(msg: Message, calculator) {
         if (`${msg.author.username}#${msg.author.discriminator}` === 'Suikoden-Guild-Bot#5382') return;
