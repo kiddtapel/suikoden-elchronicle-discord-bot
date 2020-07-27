@@ -5,14 +5,17 @@ export class Bot {
 
     whitelisted = [
         'MonkeyWrench#8202',
-        // 'Evil#5506',
+        'Evil#5506',
         // 'Frank/AstroPH#5231',
         // 'Chuckiel/Licht#5402',
+        'itan#4280',
+        // '. Phoenix#9208',
         'Esdeath#2053',
         'Donavern#6541',
         'sushi#3808',
         'Kaiiiiiiii#3401',
-        // 'itan#4280'
+        // 'Saizuke#0392',
+        // 'ZOISEKA1#0289',
     ];
 
     public process(msg: Message, calculator) {
