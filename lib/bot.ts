@@ -52,6 +52,7 @@ export class Bot {
         //     });
         // }
         if (msg.content && msg.content.toLowerCase().split(' ')[0] === 'war') {
+            return msg.reply('Sorry, I\'m not yet available. Waiting for recalibration.');
             console.log(`message from ${msg.author.username}#${msg.author.discriminator}: ${msg.content}`);
             let messageParts = msg.content.split(/\s+/);
             calculator.tier = parseInt(messageParts[1]);
