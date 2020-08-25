@@ -512,7 +512,7 @@ export function Calculator() {
             // scorePerSecond = 10.5;
             // killScore = 780;
             // maxAreaScore = 3600;
-        } else if (calculator.tier === "2") {
+        } else if (calculator.tier == "2") {
             totalMaxScore = 3150;
             maxAreaScore = totalMaxScore / 3;
             killScore = (maxAreaScore * .65) / 3;
@@ -520,7 +520,7 @@ export function Calculator() {
             // scorePerSecond = 2.625;
             // killScore = 195;
             // maxAreaScore = 900;
-        } else if (calculator.tier === "3") {
+        } else if (calculator.tier == "3") {
             totalMaxScore = 900;
             maxAreaScore = totalMaxScore / 3;
             killScore = (maxAreaScore * .65) / 3;

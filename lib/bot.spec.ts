@@ -86,6 +86,17 @@ describe('Bot', () => {
 [A1] 01:30 time left. [A2] 2 kills. Score: 4446. 2 times. Total Score: 8892`);
         });
 
+        test('war 2 3000 1:39 1:01 1:34', () => {
+            message.content = 'war 2 3150 1:39 1:01 1:34';
+
+            bot.process(message, calculator);
+            expect(message.reply).toHaveBeenCalledTimes(2);
+            expect(message.reply).toHaveBeenCalledWith(`Esdeath Level (89.84%):
+[A1] 01:39 time left. [A2] 01:01 time left. [A3] 01:34 time left. Score: 2830. `);
+            expect(message.reply).toHaveBeenCalledWith(`1 Clear (94.00%):
+[A1] 01:39 time left. [A2] Quit Battle. Score: 987. 3 times. Total Score: 2961`);
+        });
+
         test('war 1 9000 2:59', () => {
 
             message.content = 'war 1 9000 2:59 2:59 2:59';
