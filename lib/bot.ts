@@ -8,7 +8,7 @@ export class Bot {
         'Evil#5506',
         // 'Frank/AstroPH#5231',
         // 'Chuckiel/Licht#5402',
-        'itan#4280',
+        // 'itan#4280',
         // '. Phoenix#9208',
         'Esdeath#2053',
         'Donavern#6541',
